@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hello World @ GitHub"
+title: "Hello World"
 description: "第一篇博客"
 category: blog
 tags: [GitHub]

@@ -34,7 +34,7 @@ footer:
 
 # Blog category setting
 blog:
-    cate-filter: blog
+    catefilter: blog
     
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:

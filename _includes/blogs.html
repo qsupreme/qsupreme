@@ -8,7 +8,7 @@
         <ul class="listing">
         <!--just show blog-->
         {% for cat in site.categories %}
-            {% if cat[0] == "blog" %}
+            {% if cat[0] == site.blog.catefilter %}
                 {% for post in cat[1] %}
                   <li class="listing-item">
                   <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>

@@ -1,0 +1,19 @@
+ <!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <ul class="listing">
+        <!--just show blog-->
+        {% for cat in site.categories %}
+            {% if cat[0] == "blog" %}
+<!--              <li class="listing-seperator" id="{{ cat[0] }}">{{ cat[0] }}</li>-->
+                {% for post in cat[1] %}
+                  <li class="listing-item">
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  </li>
+                {% endfor %}
+            {% endif %}
+        {% endfor %}
+        </ul>
+    </div>
+</section>

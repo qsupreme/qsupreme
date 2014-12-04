@@ -17,17 +17,19 @@
                 <ul class="nav navbar-nav navbar-right">
                     
                     <li class="page-scroll">
-                        <a href="blog.html">Blog</a>
+                        <a href="/blog">Blog</a>
                     </li>
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
+                        <a href="#download">Download</a>
                     </li>
+<!--
                     <li class="page-scroll">
                         <a href="#about">About</a>
                     </li>
+-->
                     <li class="page-scroll">
                         <a href="#footer">Info</a>
                     </li>
@@ -43,19 +45,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive" src="img/profile.png" alt="">
-                    <div class="intro-text">
-                        <span class="name">{{ site.title }}</span>
-                        <hr class="star-light">
-                        <span class="skills">Web Developer - Graphic Artist - User Experience Designer</span>
+                    <img class="img-responsive" src="/img/ic_launcher.png" alt="">
+                    <div class="intro-text" >
+                        <span class="skills">{{ site.intro }}</span>
+                    </div>
+                    <div class="description-text" >
+                        <span class="skills">{{ site.functions }}</span>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-<!--
-        {% for page in site.pages %}
-          {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
-        {% endfor %}
- -->
-`

@@ -1,11 +1,14 @@
  <!-- Contact Section -->
-<section id="contact">
+<section id="blog">
     <div class="container">
+        <span>
+        <h1>{{ page.title }}</h1>
+        </span>
+        
         <ul class="listing">
         <!--just show blog-->
         {% for cat in site.categories %}
             {% if cat[0] == "blog" %}
-<!--              <li class="listing-seperator" id="{{ cat[0] }}">{{ cat[0] }}</li>-->
                 {% for post in cat[1] %}
                   <li class="listing-item">
                   <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>

@@ -1,0 +1,19 @@
+<hr height="1px" margin="0px"/>
+    <section id="download">
+        
+        <div class="container">
+             <div class="col-lg-16 col-lg-offset-2 text-center">
+
+                 {% if site.downurl.direct %}
+                <a href="{{ site.downurl.direct }}" class="col-lg-4 btn btn-lg btn-outline btn-outline-secondary">
+                    <i class="fa fa-download"></i> Download
+                </a>
+                 {% endif %}
+                 
+                {% if site.downurl.playurl %}
+                 <a href="{{ {{ site.downurl.direct }} }}" class="col-lg-4 google-play">                 
+                     <img width="159px" alt="Get in the Play Store" src="{{ site.downurl.play-img-url }}">
+                 </a>
+                 {% endif %}
+        </div>
+    </section>

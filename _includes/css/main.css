@@ -80,9 +80,9 @@ hr.star-primary:after {
 }
 
 header {
-    text-align: center;
-    color: #fff;
-    background: #{{ site.color.primary }};
+/*    text-align: center;*/
+    color: ##{{ site.color.secondary }};
+/*    background: #{{ site.color.primary }};*/   
 }
 
 header .container {
@@ -108,6 +108,15 @@ header .intro-text .skills {
     font-weight: 300;
 }
 
+header .description-text .skills {
+        font-size: 1.0em;
+        font-weight: 300;
+}
+
+#download{
+    /*background-color: #{{ site.color.secondary }}*/
+}
+
 @media(min-width:768px) {
     header .container {
         padding-top: 200px;
@@ -120,6 +129,10 @@ header .intro-text .skills {
 
     header .intro-text .skills {
         font-size: 1.75em;
+    }
+    
+    header .description-text .skills {
+        font-size: 1.0em;
     }
 }
 
@@ -181,7 +194,7 @@ section h2 {
 
 section.success {
     color: #fff;
-    background: #{{ site.color.primary }};
+    background: #{{ site.color.primary-dark }};
 }
 
 @media(max-width:767px) {
@@ -252,7 +265,7 @@ section.success {
 }
 
 .btn-outline {
-    margin-top: 15px;
+    margin: 15px;
     border: solid 2px #fff;
     font-size: 20px;
     color: #fff;
@@ -260,11 +273,16 @@ section.success {
     transition: all .3s ease-in-out;
 }
 
+.btn-outline-secondary {
+    border: solid 2px #{{ site.color.secondary }};
+    color: #{{ site.color.secondary }};
+}
+
 .btn-outline:hover,
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-    border: solid 2px #fff;
+    border: solid 2px #{{ site.color.primary }};
     color: #{{ site.color.primary }};
     background: #fff;
 }

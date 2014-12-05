@@ -58,8 +58,12 @@ downurl:
     direct: http://alensw.com/assets/quickpic_3.9.apk
     playurl: https://play.google.com/store/apps/details?id=com.alensw.PicFolder
     play-img-url: https://dt8kf6553cww8.cloudfront.net/static/images/app_store_badges/android-google-play-en-vflL9Vk_v.png
-    
-playurl: https://play.google.com/store/apps/details?id=com.alensw.PicFolder
+
+#duoshuo
+#duoshuo: qsupreme
+
+#URL
+#baseurl: qsupreme.github.io/
 
 # Build settings for jekyll!!!!
 paginate: 20
